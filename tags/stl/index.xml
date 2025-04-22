@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STL on Enco Lee</title><link>https://leo-bliss.github.io/tags/stl/</link><description>Recent content in STL on Enco Lee</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 23 Sep 2022 21:21:00 +0800</lastBuildDate><atom:link href="https://leo-bliss.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml"/><item><title>bool类型vector存在的问题以及替代方案</title><link>https://leo-bliss.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</link><pubDate>Fri, 23 Sep 2022 21:21:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</guid><description>&lt;h2 id="0x01-问题分析">0x01 问题分析
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STL on Enco Lee</title><link>https://Enco-Lee.github.io/tags/stl/</link><description>Recent content in STL on Enco Lee</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 23 Sep 2022 21:21:00 +0800</lastBuildDate><atom:link href="https://Enco-Lee.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml"/><item><title>bool类型vector存在的问题以及替代方案</title><link>https://Enco-Lee.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</link><pubDate>Fri, 23 Sep 2022 21:21:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</guid><description>&lt;h2 id="0x01-问题分析">0x01 问题分析
 &lt;/h2>&lt;blockquote>
 &lt;p>在&amp;laquo;Effective STL&amp;raquo;条目18中曾提到要避免使用&lt;code>vector&amp;lt;bool&amp;gt;&lt;/code>&lt;/p>
 &lt;/blockquote>
@@ -191,7 +191,7 @@
 >to_ullong&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>vector几种初始化方式</title><link>https://leo-bliss.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</link><pubDate>Sun, 18 Sep 2022 23:54:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</guid><description>&lt;h2 id="构造时初始化为指定值">构造时初始化为指定值
+&lt;/ul></description></item><item><title>vector几种初始化方式</title><link>https://Enco-Lee.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</link><pubDate>Sun, 18 Sep 2022 23:54:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</guid><description>&lt;h2 id="构造时初始化为指定值">构造时初始化为指定值
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -278,7 +278,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">iota&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vec&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">end&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">startValue&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// startValue, startValue+1...startValue+vec.size()
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>vector中push_back和emplace_back有啥区别？</title><link>https://leo-bliss.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</link><pubDate>Thu, 08 Sep 2022 22:57:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</guid><description>&lt;h2 id="vector">vector
+&lt;/div></description></item><item><title>vector中push_back和emplace_back有啥区别？</title><link>https://Enco-Lee.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</link><pubDate>Thu, 08 Sep 2022 22:57:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</guid><description>&lt;h2 id="vector">vector
 &lt;/h2>&lt;ul>
 &lt;li>&lt;code>push_back&lt;/code> 和&lt;code>emplace_back&lt;/code>:
 &lt;ul>

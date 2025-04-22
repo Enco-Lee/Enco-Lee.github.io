@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on Enco Lee</title><link>https://leo-bliss.github.io/categories/c++/</link><description>Recent content in C++ on Enco Lee</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 13:58:02 +0800</lastBuildDate><atom:link href="https://leo-bliss.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>一个关于拷贝构造和拷贝赋值运算符的疑问</title><link>https://leo-bliss.github.io/p/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%92%8C%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E7%96%91%E9%97%AE/</link><pubDate>Sat, 01 Jun 2024 13:58:02 +0800</pubDate><guid>https://leo-bliss.github.io/p/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%92%8C%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E7%96%91%E9%97%AE/</guid><description>&lt;h1 id="拷贝构造和拷贝赋值">拷贝构造和拷贝赋值
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on Enco Lee</title><link>https://Enco-Lee.github.io/categories/c++/</link><description>Recent content in C++ on Enco Lee</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 13:58:02 +0800</lastBuildDate><atom:link href="https://Enco-Lee.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>一个关于拷贝构造和拷贝赋值运算符的疑问</title><link>https://Enco-Lee.github.io/p/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%92%8C%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E7%96%91%E9%97%AE/</link><pubDate>Sat, 01 Jun 2024 13:58:02 +0800</pubDate><guid>https://Enco-Lee.github.io/p/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%92%8C%E6%8B%B7%E8%B4%9D%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E7%96%91%E9%97%AE/</guid><description>&lt;h1 id="拷贝构造和拷贝赋值">拷贝构造和拷贝赋值
 &lt;/h1>&lt;p>之前阅读C++的书籍中拷贝构造和拷贝赋值相关章节时， 看到一些例子时总会纳闷， 比如 :&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -27,7 +27,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">c&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// c之前已经构造好了，现在用的是拷贝赋值运算符
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>bool类型vector存在的问题以及替代方案</title><link>https://leo-bliss.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</link><pubDate>Fri, 23 Sep 2022 21:21:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</guid><description>&lt;h2 id="0x01-问题分析">0x01 问题分析
+&lt;/div></description></item><item><title>bool类型vector存在的问题以及替代方案</title><link>https://Enco-Lee.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</link><pubDate>Fri, 23 Sep 2022 21:21:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/bool%E7%B1%BB%E5%9E%8Bvector%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</guid><description>&lt;h2 id="0x01-问题分析">0x01 问题分析
 &lt;/h2>&lt;blockquote>
 &lt;p>在&amp;laquo;Effective STL&amp;raquo;条目18中曾提到要避免使用&lt;code>vector&amp;lt;bool&amp;gt;&lt;/code>&lt;/p>
 &lt;/blockquote>
@@ -220,7 +220,7 @@
 >to_ullong&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>vector几种初始化方式</title><link>https://leo-bliss.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</link><pubDate>Sun, 18 Sep 2022 23:54:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</guid><description>&lt;h2 id="构造时初始化为指定值">构造时初始化为指定值
+&lt;/ul></description></item><item><title>vector几种初始化方式</title><link>https://Enco-Lee.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</link><pubDate>Sun, 18 Sep 2022 23:54:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/vector%E5%87%A0%E7%A7%8D%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F/</guid><description>&lt;h2 id="构造时初始化为指定值">构造时初始化为指定值
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -307,7 +307,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">iota&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vec&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">end&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">startValue&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// startValue, startValue+1...startValue+vec.size()
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>正则表达式总结</title><link>https://leo-bliss.github.io/p/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 15 Sep 2022 14:57:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%80%BB%E7%BB%93/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>正则表达式总结</title><link>https://Enco-Lee.github.io/p/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 15 Sep 2022 14:57:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%80%BB%E7%BB%93/</guid><description>&lt;blockquote>
 &lt;p>c++11开始引入了正则表达式库regex&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="正则语法基础">正则语法基础
@@ -657,7 +657,7 @@
 &lt;/div>
 &lt;/div>&lt;ul>
 &lt;li>替换项如果为&lt;code>$&amp;amp;&lt;/code>则表示保持匹配结果内容，在&lt;code>$&amp;amp;&lt;/code>两边加上字符很容易&lt;strong>根据匹配结果 进行构造 替换项&lt;/strong>&lt;/li>
-&lt;/ul></description></item><item><title>c++20新特性</title><link>https://leo-bliss.github.io/p/c-20%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Thu, 15 Sep 2022 12:09:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/c-20%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
+&lt;/ul></description></item><item><title>c++20新特性</title><link>https://Enco-Lee.github.io/p/c-20%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Thu, 15 Sep 2022 12:09:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/c-20%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
 &lt;/h2>&lt;ul>
 &lt;li>&lt;code>char8_ t&lt;/code>&lt;/li>
 &lt;li>三路比较运算符：&lt;code>&amp;lt;=&amp;gt;&lt;/code>&lt;/li>
@@ -749,7 +749,7 @@
 &lt;li>
 &lt;p>&lt;code>ranges&lt;/code>库&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>c++14新特性</title><link>https://leo-bliss.github.io/p/c-14%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Tue, 13 Sep 2022 23:39:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/c-14%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
+&lt;/ul></description></item><item><title>c++14新特性</title><link>https://Enco-Lee.github.io/p/c-14%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Tue, 13 Sep 2022 23:39:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/c-14%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
 &lt;/h2>&lt;ul>
 &lt;li>变量模板&lt;/li>
 &lt;li>结合using的别名模板&lt;/li>
@@ -772,7 +772,7 @@
 &lt;h2 id="标准库新特性">标准库新特性
 &lt;/h2>&lt;ul>
 &lt;li>&lt;code>std::make_unique&lt;/code>构造&lt;code>unique_ptr&lt;/code>&lt;/li>
-&lt;/ul></description></item><item><title>c++17新特性</title><link>https://leo-bliss.github.io/p/c-17%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Tue, 13 Sep 2022 21:49:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/c-17%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
+&lt;/ul></description></item><item><title>c++17新特性</title><link>https://Enco-Lee.github.io/p/c-17%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Tue, 13 Sep 2022 21:49:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/c-17%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
 &lt;/h2>&lt;ul>
 &lt;li>结构化绑定声明：&lt;/li>
 &lt;/ul>
@@ -818,7 +818,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">apply&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">print&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">tuple&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">));&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>c++11新特性</title><link>https://leo-bliss.github.io/p/c-11%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Tue, 13 Sep 2022 21:39:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/c-11%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
+&lt;/div></description></item><item><title>c++11新特性</title><link>https://Enco-Lee.github.io/p/c-11%E6%96%B0%E7%89%B9%E6%80%A7/</link><pubDate>Tue, 13 Sep 2022 21:39:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/c-11%E6%96%B0%E7%89%B9%E6%80%A7/</guid><description>&lt;h2 id="语法层面新特性">语法层面新特性
 &lt;/h2>&lt;ul>
 &lt;li>&lt;code>long long&lt;/code>类型&lt;/li>
 &lt;li>&lt;code>char16_t&lt;/code>,&lt;code>char32_t&lt;/code>&lt;/li>
@@ -869,7 +869,7 @@
 &lt;li>单链表：&lt;code>std::forward_list&lt;/code>&lt;/li>
 &lt;li>时间操作库： &lt;code>std::chrono&lt;/code>&lt;/li>
 &lt;li>迭代器的改进，统一的迭代器获取：&lt;code>std::begin&lt;/code>, &lt;code>std::end&lt;/code>, &lt;code>std::next&lt;/code>, &lt;code>std::prev&lt;/code>&lt;/li>
-&lt;/ul></description></item><item><title>cpp基础知识</title><link>https://leo-bliss.github.io/p/cpp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link><pubDate>Sun, 11 Sep 2022 23:51:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/cpp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid><description>&lt;ul>
+&lt;/ul></description></item><item><title>cpp基础知识</title><link>https://Enco-Lee.github.io/p/cpp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link><pubDate>Sun, 11 Sep 2022 23:51:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/cpp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid><description>&lt;ul>
 &lt;li>数组&lt;code>int a[] = {1, 2, 3,4}&lt;/code>, a和&amp;amp;a, &amp;amp;a[0]的区别：
 &lt;ul>
 &lt;li>a为数组名，值是指针常量， 类型是指向元素类型的&lt;strong>常量指针&lt;/strong>, 只有&lt;strong>两种场合下数组名并不表现为指针常量&lt;/strong>：一是&lt;code>sizeof&lt;/code>操作符，另一个是取地址操作符&lt;code>&amp;amp;&lt;/code>&lt;/li>
@@ -897,10 +897,10 @@
 &lt;li>对象指针为空指针可以调用成员函数，原因是函数地址在编译期已经确定了&lt;/li>
 &lt;li>&lt;code>explicit&lt;/code>关键字是修饰构造函数的，表明不可以隐式转换成该类型对象&lt;/li>
 &lt;li>有&lt;code>int&lt;/code>和&lt;code>int*&lt;/code>形参两个构成重载的函数，当传入&lt;code>NULL&lt;/code>时将调用int形参版本的函数，原因是c++的&lt;code>NULL&lt;/code>为0的宏。c++11引入&lt;code>nullptr&lt;/code>可以解决这种调用不符本意的问题。&lt;/li>
-&lt;/ul></description></item><item><title>对于c++面向对象访问权限的误解</title><link>https://leo-bliss.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/</link><pubDate>Thu, 08 Sep 2022 23:06:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/</guid><description>&lt;p>&lt;img src="https://leo-bliss.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/visit_private.png"
+&lt;/ul></description></item><item><title>对于c++面向对象访问权限的误解</title><link>https://Enco-Lee.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/</link><pubDate>Thu, 08 Sep 2022 23:06:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/</guid><description>&lt;p>&lt;img src="https://Enco-Lee.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/visit_private.png"
 width="729"
 height="550"
-srcset="https://leo-bliss.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/visit_private_hueb0b643e7e8534e375dfb702d9d0b65a_86845_480x0_resize_box_3.png 480w, https://leo-bliss.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/visit_private_hueb0b643e7e8534e375dfb702d9d0b65a_86845_1024x0_resize_box_3.png 1024w"
+srcset="https://Enco-Lee.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/visit_private_hueb0b643e7e8534e375dfb702d9d0b65a_86845_480x0_resize_box_3.png 480w, https://Enco-Lee.github.io/p/%E5%AF%B9%E4%BA%8Ec-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E7%9A%84%E8%AF%AF%E8%A7%A3/visit_private_hueb0b643e7e8534e375dfb702d9d0b65a_86845_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="visit_private"
 class="gallery-image"
@@ -915,7 +915,7 @@ private成员不是不允许外部访问吗？这么为什么这里可以直接�
 &lt;li>封装是编译期的概念，是&lt;strong>针对类型而非对象&lt;/strong>的，在类的成员函数中是可以访问同类型实例对象的私有成员变量的。&lt;/li>
 &lt;li>&lt;a class="link" href="https://www.cnblogs.com/woshizhizhong-tech/p/8450475.html" target="_blank" rel="noopener"
 >ref&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>vector中push_back和emplace_back有啥区别？</title><link>https://leo-bliss.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</link><pubDate>Thu, 08 Sep 2022 22:57:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</guid><description>&lt;h2 id="vector">vector
+&lt;/ul></description></item><item><title>vector中push_back和emplace_back有啥区别？</title><link>https://Enco-Lee.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</link><pubDate>Thu, 08 Sep 2022 22:57:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/vector%E4%B8%ADpush_back%E5%92%8Cemplace_back%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB/</guid><description>&lt;h2 id="vector">vector
 &lt;/h2>&lt;ul>
 &lt;li>&lt;code>push_back&lt;/code> 和&lt;code>emplace_back&lt;/code>:
 &lt;ul>
@@ -1125,7 +1125,7 @@ private成员不是不允许外部访问吗？这么为什么这里可以直接�
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;/li>
-&lt;/ul></description></item><item><title>move and forward</title><link>https://leo-bliss.github.io/p/move-and-forward/</link><pubDate>Tue, 06 Sep 2022 23:50:00 +0800</pubDate><guid>https://leo-bliss.github.io/p/move-and-forward/</guid><description>&lt;h1 id="移动语义和完美转发">移动语义和完美转发
+&lt;/ul></description></item><item><title>move and forward</title><link>https://Enco-Lee.github.io/p/move-and-forward/</link><pubDate>Tue, 06 Sep 2022 23:50:00 +0800</pubDate><guid>https://Enco-Lee.github.io/p/move-and-forward/</guid><description>&lt;h1 id="移动语义和完美转发">移动语义和完美转发
 &lt;/h1>&lt;ul>
 &lt;li>
 &lt;p>左值：表达式结束后依然存在的持久化对象，注意：具名右值引用是左值：&lt;code>int&amp;amp;&amp;amp; val = 1024; // val为左值&lt;/code>&lt;/p>
@@ -1274,7 +1274,7 @@ private成员不是不允许外部访问吗？这么为什么这里可以直接�
 &lt;/div>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>《More Effective C++》技术章节笔记</title><link>https://leo-bliss.github.io/p/more-effective-c-%E6%8A%80%E6%9C%AF%E7%AB%A0%E8%8A%82%E7%AC%94%E8%AE%B0/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://leo-bliss.github.io/p/more-effective-c-%E6%8A%80%E6%9C%AF%E7%AB%A0%E8%8A%82%E7%AC%94%E8%AE%B0/</guid><description>&lt;ul>
+&lt;/ul></description></item><item><title>《More Effective C++》技术章节笔记</title><link>https://Enco-Lee.github.io/p/more-effective-c-%E6%8A%80%E6%9C%AF%E7%AB%A0%E8%8A%82%E7%AC%94%E8%AE%B0/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://Enco-Lee.github.io/p/more-effective-c-%E6%8A%80%E6%9C%AF%E7%AB%A0%E8%8A%82%E7%AC%94%E8%AE%B0/</guid><description>&lt;ul>
 &lt;li>
 &lt;p>不可真&lt;code>virtuel&lt;/code>的函数可以借助可真&lt;code>virtuel&lt;/code>的成员函数达到&lt;strong>伪&lt;/strong>&lt;code>virtual&lt;/code>。比如构造函数和非成员函数的&amp;quot;虚&amp;quot;化：&lt;/p>
 &lt;ul>
@@ -1643,7 +1643,7 @@ private成员不是不允许外部访问吗？这么为什么这里可以直接�
 &lt;li>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>c++多线程总结</title><link>https://leo-bliss.github.io/p/c-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%80%BB%E7%BB%93/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://leo-bliss.github.io/p/c-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="thread">thread
+&lt;/ul></description></item><item><title>c++多线程总结</title><link>https://Enco-Lee.github.io/p/c-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%80%BB%E7%BB%93/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://Enco-Lee.github.io/p/c-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="thread">thread
 &lt;/h2>&lt;p>基础概念：&lt;/p>
 &lt;ul>
 &lt;li>
